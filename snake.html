@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Змейка</title>
+   <link rel="stylesheet" href="styles/global/reset.css">
+   <link rel="stylesheet" href="styles/global/variables.css">
+   <link rel="stylesheet" href="styles/header/header.css">
+   <link rel="stylesheet" href="styles/main/main.css">
+   <link rel="stylesheet" href="styles/main/aside.css">
+   <link rel="stylesheet" href="styles/main/game.css">
+   <link rel="stylesheet" href="styles/main/games/snake.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+   <header class="header">
+      <div class="header-content">
+         <h1 class="header-logo">Змейка</h1>
+         <a href="index.html" class="header-button">На главную</a>
+      </div>
+   </header>
+   <main class="main">
+      <div class="playing-field">
+         <canvas id="game" width="400" height="400">
+            <div class="game-option"></div>
+         </canvas>
+      </div>
+      <p id="start-button">Нажми на меня, чтобы начать!</p>
+   </main>
+   <script src="JS/games/snake-random.js"></script>
+   <script src="JS/games/snake.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.main-content {
+   max-width: 1260px;
+   margin: 0 auto;
+   display: flex;
+}
+.games-categories {
+   margin: 25px 0 0 25px;
+}
+.category-title {
+   font-weight: 500;
+   font-size: var(--font-size-medium);
+   padding-bottom: 15px;
+}
+.games-list {
+   display: flex;
+   flex-wrap: wrap;
+}
