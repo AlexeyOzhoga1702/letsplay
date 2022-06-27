@@ -1,0 +1,24 @@
+.options-button,
+.start-button,
+.gameover-button {
+   padding: 5px 15px;
+   background-color: var(--color-grey);
+   cursor: pointer;
+   color: var(--color-black);
+   border-radius: 15px;
+   transition: all 0.25s;
+}
+.gameover-button {
+   opacity: 0.75;
+   display: block;
+   position: absolute;
+   bottom: 15px;
+   left: 30%;
+}
+.options-button:hover,
+.gameover-button:hover {
+   background-color: var(--color-light-grey);
+}
+.start-button:hover {
+   background-color: var(--color-white);
+}

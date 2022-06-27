@@ -1,0 +1,19 @@
+.gameover-modal {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.75);
+   color: var(--color-white);
+   padding: 15px 25px;
+   font-size: 15px;
+   text-align: center;
+}
+.gameover-modal p:nth-child(n+2) {
+   margin-bottom: 10px;
+}
+.gameover-title {
+   text-align: center;
+   font-size: 20px;
+}
