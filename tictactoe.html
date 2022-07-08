@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Крестики-нолики</title>
+      <link rel="stylesheet" href="styles/global/reset.css">
+      <link rel="stylesheet" href="styles/global/variables.css">
+      <link rel="stylesheet" href="styles/header/header.css">
+      <link rel="stylesheet" href="styles/main/main.css">
+      <link rel="stylesheet" href="styles/main/aside.css">
+      <link rel="stylesheet" href="styles/main/game.css">
+      <link rel="stylesheet" href="styles/main/games/tic-tac-toe/tictactoe.css">
+      <link rel="stylesheet" href="styles/main/games/tic-tac-toe/tictactoe-modal.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+   </head>
+   <body>
+      <header class="header">
+         <div class="header-content">
+            <h1 class="header-logo">Крестики-нолики</h1>
+            <a href="index.html" class="header-button">На главную</a>
+         </div>
+      </header>
+
+      <div class="info-score _hide">
+         <p class="title-score">Общий счёт</p>
+         <p class="score">
+            <span class="score-player">0</span> : <span class="score-bot">0</span>
+            <br>
+            <span class="game-left">3</span>
+         </p>
+      </div>
+
+      <div class="tictactoe-gamefield">
+         <div class="tictactoe-cell _hide" data-item="0"></div>
+         <div class="tictactoe-cell _hide" data-item="1"></div>
+         <div class="tictactoe-cell _hide" data-item="2"></div>
+         <div class="tictactoe-cell _hide" data-item="3"></div>
+         <div class="tictactoe-cell _hide" data-item="4"></div>
+         <div class="tictactoe-cell _hide" data-item="5"></div>
+         <div class="tictactoe-cell _hide" data-item="6"></div>
+         <div class="tictactoe-cell _hide" data-item="7"></div>
+         <div class="tictactoe-cell _hide" data-item="8"></div>
+      </div>
+      
+      <div class="info-move _hide">
+         <p class="player-turn">Ходите вы</p>
+      </div>
+
+      <div class="modal-options">
+         <p class="modal-title">До скольки играем?</p>
+         <img class="tictactoe-logo" src="images/tictactoe-logo.jpg" alt="Лого крестики-нолики">
+         <input id="score-range" type="range" min="1" max="5" value="3" step="2">
+         <p class="modal-subtitle">До первой победы, до 3, до 5</p>
+         <span class="button-start">Начать</span>
+      </div>
+      <script src="JS/games/tictactoe/tictactoe.js"></script>
+   </body>
+   </html>

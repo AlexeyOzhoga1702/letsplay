@@ -5,7 +5,6 @@ const gameField = document.getElementById('game'),
 
 const startGame = gamemode => requestAnimationFrame(gamemode);
 let getRandomInt = (min, max) => ~~(Math.random() * (max - min)) + min;
-
 let count = 0,
     game = {
        snake: {
@@ -89,7 +88,7 @@ function snakeDefault() {
 
 
 // Snake movement
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', e => {
    if (e.which === 37 && game.snake.dx === 0 || // A (left)
        e.which === 65 && game.snake.dx === 0) {
        game.snake.dx = -grid;
@@ -107,7 +106,7 @@ document.addEventListener('keydown', function (e) {
               game.snake.dy = grid;
               game.snake.dx = 0;
    }
-});
+})
 
 function ateApple() {
    game.apple.x = getRandomInt(0, 25) * grid;

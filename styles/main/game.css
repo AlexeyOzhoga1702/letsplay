@@ -13,8 +13,16 @@
    border-right: 1px solid var(--color-light-grey);
    text-align: center;
    cursor: pointer;
+   box-shadow: 0px 5px 15px rgb(223, 223, 223);
+   z-index: 1;
+   transition: all 0.1s;
+   filter: blur(2.5px);
 }
 .game-title {
    font-size: var(--font-size-small);
    color: var(--color-black);
+}
+.game:hover{
+   transform: scale(1.05);
+   filter: blur(0px);
 }

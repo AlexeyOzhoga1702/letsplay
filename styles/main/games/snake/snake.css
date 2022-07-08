@@ -16,11 +16,6 @@ canvas {
 .main {
   text-align: center;
 }
-
-
-._hide {
-  display: none;
-}
 .game-logo {
   position: absolute;
   height: 100%;

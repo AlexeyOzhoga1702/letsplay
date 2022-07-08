@@ -9,3 +9,8 @@
    --font-size-medium: 20px;
    --font-size-large: 35px;
 }
+
+._hide {
+   display: none;
+   overflow: hidden;
+ }

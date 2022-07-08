@@ -1,0 +1,12 @@
+.gamefield {
+   display: flex;
+   width: calc(250px + 250px + 250px + 50px + 50px); /* rock + scissors + paper + margin-right + margin-right*/
+   height: 250px; /* height card*/
+   justify-content: space-between;
+}
+
+.gamefield-card {
+   background-size: cover;
+   width: 250px;
+   height: 250px;
+}

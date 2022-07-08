@@ -1,69 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Змейка</title>
-   <link rel="stylesheet" href="styles/global/reset.css">
-   <link rel="stylesheet" href="styles/global/variables.css">
-   <link rel="stylesheet" href="styles/header/header.css">
-   <link rel="stylesheet" href="styles/main/main.css">
-   <link rel="stylesheet" href="styles/main/aside.css">
-   <link rel="stylesheet" href="styles/main/game.css">
-   <link rel="stylesheet" href="styles/main/games/snake/snake.css">
-   <link rel="stylesheet" href="styles/main/games/snake/snake-modal.css">
-   <link rel="stylesheet" href="styles/main/games/snake/snake-buttons.css">
-   <link rel="stylesheet" href="styles/main/games/snake/snake-gameover-modal.css">
-   <link rel="stylesheet" href="styles/main/games/snake/snake-indicators.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-</head>
-<body>
-   <header class="header">
-      <div class="header-content">
-         <h1 class="header-logo">Змейка</h1>
-         <a href="index.html" class="header-button">На главную</a>
-      </div>
-   </header>
-
-   <main class="main" id="main">
-      <div class="playing-field">
-         <canvas id="game" width="400" height="400"></canvas>
-         <img class="game-logo" id="game-logo" src="images/snake.jpg" alt="LOGO">
-         <div class="gameover-modal _hide" id="gameover-modal">
-            <p class="gameover-title">Игра окончена</p>
-            <span class="gameover-button" id="gameover-button">Начать сначала</span>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Змейка</title>
+      <link rel="stylesheet" href="styles/global/reset.css">
+      <link rel="stylesheet" href="styles/global/variables.css">
+      <link rel="stylesheet" href="styles/header/header.css">
+      <link rel="stylesheet" href="styles/main/main.css">
+      <link rel="stylesheet" href="styles/main/aside.css">
+      <link rel="stylesheet" href="styles/main/game.css">
+      <link rel="stylesheet" href="styles/main/games/snake/snake.css">
+      <link rel="stylesheet" href="styles/main/games/snake/snake-modal.css">
+      <link rel="stylesheet" href="styles/main/games/snake/snake-buttons.css">
+      <link rel="stylesheet" href="styles/main/games/snake/snake-gameover-modal.css">
+      <link rel="stylesheet" href="styles/main/games/snake/snake-indicators.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+   </head>
+   <body>
+      <header class="header">
+         <div class="header-content">
+            <h1 class="header-logo">Змейка</h1>
+            <a href="index.html" class="header-button">На главную</a>
          </div>
-         <div class="game-indicator-apples _hide" id="game-indicator-apples">
-            <div id="indicator-apples"></div>
-         </div>
-         <div class="game-indicator-timer _hide" id="game-indicator-timer">
-            <div id="indicator-timer"></div>
-         </div>
-      </div>
-      <span class="options-button" id="options-button">Настроить игру</span>
-   </main>
+      </header>
 
-   <div class="modal-options _hide" id="modal-options">
-      <p class="modal-title">Настройки игры:</p>
-      <form action="" class="speed-range option">
-         <label for="speed-range">Скорость змейки:</label>
-         <input type="range" name="speed-range" id="speed-range" value="5" min="4" max="10">
-      </form>
-      <div class="option-snake-color option">
-         <p class="title-option">Цвет змейки:</p>
-         <input type="text" class="snake-color" id="snake-color" placeholder="#228C22 | БЕЗ #">
-      </div>
-      <div class="option-apple-color option">
-         <p class="title-option">Цвет яблока:</p>
-         <input type="text" class="apple-color" id="apple-color" placeholder="#FF6347 | БЕЗ #">
-      </div>
-      <span class="start-button" id="start-button">Начать игру</span>
-   </div>
+      <main class="main" id="main">
+         <div class="playing-field">
+            <canvas id="game" width="400" height="400"></canvas>
+            <img class="game-logo" id="game-logo" src="images/snake.jpg" alt="LOGO">
+            <div class="gameover-modal _hide" id="gameover-modal">
+               <p class="gameover-title">Игра окончена</p>
+               <span class="gameover-button" id="gameover-button">Начать сначала</span>
+            </div>
+            <div class="game-indicator-apples _hide" id="game-indicator-apples">
+               <div id="indicator-apples"></div>
+            </div>
+            <div class="game-indicator-timer _hide" id="game-indicator-timer">
+               <div id="indicator-timer"></div>
+            </div>
+         </div>
+         <span class="options-button" id="options-button">Настроить игру</span>
+      </main>
 
-   <script src="JS/games/snake/snake.js"></script>
-   <script src="JS/games/snake/snake-timer.js"></script>
-</body>
-</html>
+      <div class="modal-options _hide" id="modal-options">
+         <p class="modal-title">Настройки игры:</p>
+         <form action="" class="speed-range option">
+            <label for="speed-range">Скорость змейки:</label>
+            <input type="range" name="speed-range" id="speed-range" value="5" min="4" max="10">
+         </form>
+         <div class="option-snake-color option">
+            <p class="title-option">Цвет змейки:</p>
+            <input type="text" class="snake-color" id="snake-color" placeholder="#228C22 | БЕЗ #">
+         </div>
+         <div class="option-apple-color option">
+            <p class="title-option">Цвет яблока:</p>
+            <input type="text" class="apple-color" id="apple-color" placeholder="#FF6347 | БЕЗ #">
+         </div>
+         <span class="start-button" id="start-button">Начать игру</span>
+      </div>
+
+      <script src="JS/games/snake/snake.js"></script>
+   </body>
+   </html>
